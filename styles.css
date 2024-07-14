@@ -1,0 +1,52 @@
+body {
+    background: #2499dd;
+    margin-bottom: 600px;
+    
+}
+
+#title {
+    margin-left: 520px;
+    font: normal 47px arial;
+    color: #ffffff;
+    background-color: #eb1f1fd5;
+    width: 230px;
+    height: 120px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.en {
+    font: normal 15px arial;
+    color: #ffffff;
+}
+
+#area {
+    font:normal 15pt arial;
+    color: #ffffff;
+    background: green;
+    width: 200px;
+    height: 200px;
+    border-radius:10px;
+    line-height: 190px;
+    text-align: center;
+}
+
+input {
+    font: normal 18pt arial;
+    width: 100px;
+    
+}
+
+div#res {
+    margin-top: 20px;
+}
+
+.en {
+    background-color: #ff950b;
+     width: 80px;
+     height: 25px;
+     border-radius: 10px;
+     margin-bottom: 40px;
+     
+ }

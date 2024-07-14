@@ -1,0 +1,26 @@
+body {
+    color: #fff;
+    background-color: #222222;
+    font-family: "Gill Sans", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+    margin: auto;
+}

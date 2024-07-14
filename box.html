@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C.ico" type="image/x-icon">
+    <title>box-level</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: #686565;
+        }
+
+        header{
+            color: rgb(22, 22, 22);
+            background-color: rgb(236, 234, 234);
+            /*width: 600px;*/
+            height: 150px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+       article > h2 {
+            font-weight: 20px;
+        }
+
+        main {
+            text-align: center;
+            color: hsl(0, 7%, 86%);
+            background-color: #e9e6e6;
+            margin-top: 20px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid black;
+            font-weight: lighter;
+            border-radius: 10px;
+        }
+
+        main > article {
+            background-color: #646363;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        header > nav {
+            background-color: #646363;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.884);
+        }
+
+        nav > a {
+            color: white;
+            margin-right: 30px;
+            
+        }
+
+        article > aside {
+            background-color: #7c7979;
+        }
+
+        a:hover {
+            color: lightgreen ;
+        }
+
+        footer {
+            background-color: #1b1b1b;
+            text-align: center;
+            padding: 4px;
+            margin: 9px;
+        }
+
+        footer::first-letter {
+          color: #09ace2;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <h1 id="titulo">Meu site test de <strong>Box-level</strong></h1>
+    <nav>
+    <a href="fontes/pesudoC.html" target= "_self" rel="next">SiteText</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    </nav>
+    </header>
+    <main>
+        <article>
+            <h2>O que e box model?</h2>
+            <p>No desenvolvimento da Web, o modelo de caixa <abbr title="Cascadind Style Sheets">CSS</abbr> refere-se a como os elementos HTML são modelados nos mecanismos do navegador e como as dimensões desses elementos HTML são derivadas das propriedades CSS. É um conceito fundamental para a composição de páginas web em HTML.</p>
+            <aside>Escrito por <a href="https://en.wikipedia.org/wiki/CSS_box_model" target="_blank" rel="noopener noreferrer">wikipedia</a></aside>
+        </article>
+    </main>
+    <footer><p>&copy; Curso em video</p></footer>
+</body>
+</html>

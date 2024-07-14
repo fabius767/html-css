@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C.ico" type="image/x-icon">
+    <title>Pseudo-classes</title>
+    <style>
+        body {
+            text-align: center;
+            color: #ddd4d4;
+            background-color: #252525;
+            margin: auto;
+        }
+
+        div {
+            background-color: #181818;
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        #b:hover > p {
+            display: block;
+            color: #a13c13;
+        }
+
+        #a:hover > p {
+            display: block;
+            color: #a13c13;
+        }
+
+        #c:hover > p {
+            display: block;
+            color: #a13c13;
+        }
+
+         #a:hover {
+            color: #252525;
+            background-color: rgb(61, 233, 233);
+        }
+
+        #b:hover {
+            color: #252525;
+            background-color: rgb(219, 71, 212);
+        }
+
+        #c:hover {
+            color: #252525;
+            background-color: rgb(145, 252, 38);
+        }
+
+        h1:hover {
+            background-color: #e01a1a;
+            margin: auto;
+            width: 200px;
+        }
+
+        a:active {
+            color: rgb(44, 175, 175);
+        }
+
+        #g::first-letter {
+            font-size: 20px;
+            color: rgb(87, 223, 223);
+        }
+     
+        h1::before {
+            content: url(C.ico);
+        }
+    </style>
+</head>
+<body>
+    <div id="a">01 <p>You</p></div>
+    <div id="b">02 <p>Are</p></div>
+    <div id="c">03 <p>Amazing!</p></div>
+    <h1>Ola mundo</h1>
+    <a href="css.html" target="_self" rel="next"><p>CSS</p></a>
+    <p id="g">you are my superstar</p>
+    <p id="k">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore qui veniam porro quis eveniet rerum, perferendis fugit impedit, reprehenderit quia optio nam id, alias quas. Quis accusantium autem modi suscipit.</p>
+</body>
+</html>

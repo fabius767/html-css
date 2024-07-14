@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+        background-color: #f5f5f5;
+        font-family: arial, sans-serif;
+    }
+
+    div {
+        color: #313131;
+        background-color: #ffff;
+        margin: 20px auto;
+        padding: 20px;
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px #686767;
+    }
+
+    #bb {
+        border: 1px solid #969595 ;
+        width: 400px;
+        height: 25px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    #bc {
+        text-align: center;
+        color: #ffff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 5px;
+        width: 140px;
+        height: 35px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        padding: 13px;
+        border-bottom: 1px solid #b8b8b8;
+    }
+
+    li:last-child {
+    border-bottom: none;
+}
+</style>
+</head>
+<body>
+   <div>
+    <h1>Minhas Tarefas</h1>
+    <input type="text" name="botao" id="bb" placeholder="adicione uma nova tarefa">
+    <p><input id="bc" type="button" value="adicionar Tarefa" onclick="clicar()"></p>
+    <ul id="lista">
+    </ul>
+   </div>
+   <p><a href="../../hht.html" target="_self">voltar</a></p> 
+</body>
+<script>
+    let resul = document.getElementById('bb')
+    let lis = document.getElementById('lista')
+
+    function clicar() {
+    if(resul.value == 0) {
+    alert('por favor adicione uma tarefa')
+    } else { 
+    let li = document.createElement('li')
+   li.innerHTML = resul.value
+   lis.appendChild(li)
+}
+resul.value = ''
+resul.focus()
+
+}
+
+</script>
+</html>
